@@ -38,7 +38,7 @@
         { text: "一次也不回头。我既然许下了这份约，就守到底。", scores: { hera: 1, athena: 1 } },
         { text: "我还是回头了——如果这是爱，我宁愿看一眼她真实的模样再失去。", scores: { orpheus: 8, narcissus: 1 } },
         { text: "走到最后一阶时停下，呼唤她的名字听她应答，但不转身。", scores: { cassandra: 3, apollo: 1, circe: 1 } },
-        { text: "本就不该谈判。我宁愿留下来陪她，不再往光里走。", scores: { persephone: 3, hades: 1, medea: 1 } }
+        { text: "本就不该谈判。我宁愿留下来陪她，不再往光里走。", scores: { persephone: 3, hades: 1 } }
       ]
     },
     {
@@ -50,7 +50,7 @@
       options: [
         { text: "去特洛伊。我宁愿灿烂地燃尽一次，也不要被岁月磨平。", scores: { achilles: 8, icarus: 1 } },
         { text: "留在家里。和爱的人一起慢慢老去，比任何诗行都珍贵。", scores: { demeter: 3 } },
-        { text: "我不接受二选一。给我三天，我去找第三条路。", scores: { odysseus: 3, prometheus: 1 } },
+        { text: "我不接受二选一。给我三天，我去找第三条路。", scores: { odysseus: 3 } },
         { text: "先去再说，反正命运是给我推石头用的，我推便是。", scores: { sisyphus: 3, heracles: 1 } }
       ]
     },
@@ -61,7 +61,7 @@
       mythStory: "阿拉克涅是吕底亚的一位平民少女，织布的本事举世无双。人们从各地赶来看她的织机，她的作品如此精妙，众人纷纷说：连雅典娜也未必能胜她。\n\n阿拉克涅听见这些赞誉，不但不谦让，反而公开宣称：请雅典娜来与我比一比。女神以老妪之形出现在她面前，劝她收回轻狂之语，她却冷笑着拒绝。雅典娜褪去伪装，比试就此开始。\n\n女神织出众神荣耀的图景。阿拉克涅则针针精准地织出了众神的荒淫与丑闻——宙斯的出轨、阿波罗的诱骗、波塞冬的暴行。她的作品无可挑剔，连雅典娜也找不出一处错。恼怒的女神把她的织物撕碎，将她变成一只永远吊在丝线上的蜘蛛。",
       question: "世人都说你是这一行无人能敌的匠人，一位更高者听闻此言，亲自下场与你较量。你会：",
       options: [
-        { text: "不退让。我织我所见，哪怕对方是神，真相也只有一个版本。", scores: { athena: 8, medea: 3, antigone: 1, narcissus: 1 } },
+        { text: "不退让。我织我所见，哪怕对方是神，真相也只有一个版本。", scores: { athena: 8, medea: 1, antigone: 1, narcissus: 1, apollo: 1 } },
         { text: "收手。我的手艺再好，也不必用它与至高者为敌。", scores: { hephaestus: 3, hera: 1 } },
         { text: "比是要比，但我把作品藏起一半，不让她找到把柄。", scores: { odysseus: 3, hermes: 1 } },
         { text: "干脆封机退隐山林，独自一人继续织，不再给任何人看。", scores: { artemis: 3, hecate: 1, circe: 1 } }
@@ -102,7 +102,7 @@
       options: [
         { text: "往上飞。我要知道自己这对翅膀究竟能到多高。", scores: { icarus: 8, achilles: 1, narcissus: 1 } },
         { text: "紧跟父亲的尾迹，中线就是中线，我一步不偏。", scores: { hephaestus: 3, hera: 1 } },
-        { text: "停在半空，先试几次俯冲再往上，摸清蜡的极限。", scores: { prometheus: 3, athena: 1 } },
+        { text: "停在半空，先试几次俯冲再往上，摸清蜡的极限。", scores: { prometheus: 3, athena: 1, apollo: 1 } },
         { text: "干脆折返回岛，和父亲商量一个更稳妥的方案。", scores: { demeter: 3, odysseus: 1 } }
       ]
     },
@@ -167,7 +167,7 @@
       options: [
         { text: "吃下。我已经是这里的人了，不如承认它。", scores: { persephone: 8, hades: 1, pandora: 1 } },
         { text: "不吃。我要彻底回到母亲身边，不留半只脚在他那边。", scores: { demeter: 3, artemis: 1 } },
-        { text: "只吃一颗，留下余地——让自己能在两边各过一段。", scores: { hecate: 3, circe: 1, medea: 1 } },
+        { text: "只吃一颗，留下余地——让自己能在两边各过一段。", scores: { hecate: 3, circe: 1 } },
         { text: "含在嘴里不吞，回到地上再吐掉，做个聪明的脱逃者。", scores: { odysseus: 3, hermes: 1 } }
       ]
     },
@@ -219,7 +219,7 @@
       options: [
         { text: "把药方交给他。从今以后我只有他，回不去的家就不再是家。", scores: { medea: 8, aphrodite: 1, pandora: 1 } },
         { text: "按下那只手。再爱他，父亲的血也不能染在我身上。", scores: { antigone: 3, demeter: 1 } },
-        { text: "只救他一次，不随他走——让他自己去扛自己的命运。", scores: { athena: 3, artemis: 1 } },
+        { text: "只救他一次，不随他走——让他自己去扛自己的命运。", scores: { athena: 3, artemis: 1, apollo: 1 } },
         { text: "陪他走，但我不杀任何人，我只做他最后的护身符。", scores: { persephone: 3, orpheus: 1, circe: 1 } }
       ]
     },

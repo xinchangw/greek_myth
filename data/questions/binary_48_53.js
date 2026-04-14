@@ -7,7 +7,7 @@
       type: "binary",
       question: "世界只剩两种元素可选，你愿成为锻造的烈火，还是吞没一切的深海？",
       options: [
-        { text: "炉膛中的火焰，把苦难敲打成有用之物", scores: { hephaestus: 1, prometheus: 1 } },
+        { text: "炉膛中的火焰，把苦难敲打成有用之物", scores: { hephaestus: 1 } },
         { text: "无岸的深海，沉默却能掀翻所有王座", scores: { poseidon: 1, hades: 1 } }
       ]
     },
@@ -43,7 +43,7 @@
       type: "binary",
       question: "翅膀已装上，你选飞向焚身的太阳，还是守着麦田的黄昏？",
       options: [
-        { text: "再高一点，哪怕羽毛熔化坠入蓝海", scores: { icarus: 3, prometheus: 1, pandora: 1 } },
+        { text: "再高一点，哪怕羽毛熔化坠入蓝海", scores: { icarus: 3, pandora: 1 } },
         { text: "低低掠过麦浪，把根扎回泥土里", scores: { demeter: 3, hephaestus: 1 } }
       ]
     },
@@ -53,7 +53,7 @@
       question: "命运递来两张门票：推一辈子石头，或用一生苦劳换一夜封神？",
       options: [
         { text: "推石头到老，在无意义里笑出意义", scores: { sisyphus: 3, antigone: 1, hermes: -1 } },
-        { text: "十二件苦役打完，熊熊柴堆上升为神", scores: { heracles: 3, prometheus: 1 } }
+        { text: "十二件苦役打完，熊熊柴堆上升为神", scores: { heracles: 3 } }
       ]
     }
   );

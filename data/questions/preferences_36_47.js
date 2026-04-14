@@ -85,7 +85,7 @@
       question: "若必须选一种结局，你选？",
       options: [
         { text: "战死在沙场上", scores: { achilles: 3, ares: 1, poseidon: 1, demeter: -1 } },
-        { text: "为爱人赴死", scores: { orpheus: 3, icarus: 1, medea: 1 } },
+        { text: "为爱人赴死", scores: { orpheus: 3, icarus: 1 } },
         { text: "死后仍无尽劳作", scores: { sisyphus: 3, heracles: 2 } },
         { text: "在花园中被悄然带走", scores: { persephone: 1, pandora: 1 } }
       ]
@@ -98,7 +98,7 @@
         { text: "热烈占有，不容他人染指", scores: { zeus: 3, hera: 1, medea: 1, hermes: -1 } },
         { text: "沉迷于美与欲望的漩涡", scores: { aphrodite: 3, dionysus: 1, athena: -1 } },
         { text: "彼此忠贞，白头到老的盟约", scores: { hera: 3, persephone: 1 } },
-        { text: "形同山林的独处与自由", scores: { artemis: 1, hecate: 1, circe: 1 } }
+        { text: "形同山林的独处与自由", scores: { artemis: 1, circe: 1 } }
       ]
     },
     {
@@ -107,9 +107,9 @@
       question: "面对真正的对手，你想如何与之相遇？",
       options: [
         { text: "正面冲撞，拳拳到肉的厮杀", scores: { ares: 3, achilles: 1, heracles: 1 } },
-        { text: "层层设局，把他拖进自己挖的坑", scores: { odysseus: 3, medea: 1 } },
+        { text: "层层设局，把他拖进自己挖的坑", scores: { odysseus: 3 } },
         { text: "用毒、用咒、用他看不见的手段", scores: { circe: 3, medea: 1, hecate: 1 } },
-        { text: "以法理与良心，逼他在众人前低头", scores: { antigone: 3, athena: 1, cassandra: 1 } }
+        { text: "以法理与良心，逼他在众人前低头", scores: { antigone: 3, athena: 1, cassandra: 1, apollo: 1 } }
       ]
     },
     {
