@@ -88,5 +88,8 @@
     medea:       placeholder("M", "Medea · 美狄亚"),
     icarus:      placeholder("I", "Icarus · 伊卡洛斯"),
     antigone:    placeholder("Ἀ", "Antigone · 安提戈涅"),
+    pandora:     placeholder("◉", "Pandora · 潘多拉"),
+    circe:       placeholder("✴", "Circe · 喀耳刻"),
+    narcissus:   placeholder("Ν", "Narcissus · 纳西索斯"),
   };
 })();

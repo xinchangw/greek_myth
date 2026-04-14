@@ -937,6 +937,53 @@ body {
 }
 .modal__body { position: relative; }
 
+/* Myth story modal body */
+.myth-detail__header { text-align: center; margin-bottom: 10px; }
+.myth-detail__kicker {
+  font-family: var(--font-display);
+  font-size: 11px; letter-spacing: 0.42em;
+  color: var(--gold); opacity: 0.75; margin-bottom: 14px;
+  text-transform: uppercase;
+}
+.myth-detail__title {
+  font-family: var(--font-zh);
+  font-weight: 500;
+  font-size: clamp(22px, 3vw, 28px);
+  color: var(--text);
+  letter-spacing: 0.2em;
+  margin-bottom: 18px;
+}
+
+/* Myth story icon button inside quiz card */
+.quiz-myth-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: -4px 0 22px;
+  padding: 6px 12px;
+  background: rgba(212, 168, 75, 0.06);
+  border: 1px solid var(--gold-faint);
+  color: var(--gold);
+  font-family: var(--font-serif);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition: all 220ms ease;
+  border-radius: 2px;
+  max-width: 100%;
+}
+.quiz-myth-btn:hover {
+  color: var(--gold-bright);
+  border-color: var(--gold-dim);
+  background: rgba(212, 168, 75, 0.14);
+  box-shadow: var(--shadow-gold);
+}
+.quiz-myth-btn__icon { font-size: 15px; line-height: 1; }
+.quiz-myth-btn__label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 480px) {
+  .quiz-myth-btn__label { max-width: 60vw; }
+}
+
 /* Reusable character detail block inside modal */
 .char-detail__header { text-align: center; margin-bottom: 10px; }
 .char-detail__icon {

@@ -4,8 +4,8 @@
 (function () {
   "use strict";
 
-  const STORAGE_PROGRESS = "greekmyth:progress";
-  const STORAGE_RESULT = "greekmyth:lastResult";
+  const STORAGE_PROGRESS = "greekmyth:progress:v2";
+  const STORAGE_RESULT = "greekmyth:lastResult:v2";
 
   const views = {
     intro: document.getElementById("view-intro"),
@@ -120,7 +120,22 @@
     document.getElementById("quiz-type").textContent = typeMap[q.type] || "QUESTION";
 
     // Question
-    document.getElementById("quiz-question").textContent = q.question;
+    const qEl = document.getElementById("quiz-question");
+    qEl.textContent = q.question;
+
+    // Myth story icon (only when question carries a myth)
+    const cardEl = document.getElementById("quiz-card");
+    const staleMyth = cardEl.querySelector(".quiz-myth-btn");
+    if (staleMyth) staleMyth.remove();
+    if (q.mythStory && q.mythTitle) {
+      const mbtn = document.createElement("button");
+      mbtn.type = "button";
+      mbtn.className = "quiz-myth-btn";
+      mbtn.setAttribute("aria-label", "阅读此题的神话故事");
+      mbtn.innerHTML = `<span class="quiz-myth-btn__icon" aria-hidden="true">📖</span><span class="quiz-myth-btn__label">神话 · ${escapeHtml(q.mythTitle)}</span>`;
+      mbtn.addEventListener("click", () => openMythModal(q.mythTitle, q.mythStory));
+      qEl.insertAdjacentElement("afterend", mbtn);
+    }
 
     // Options
     const wrap = document.getElementById("quiz-options");
@@ -150,6 +165,7 @@
 
     state.answers[q.id] = idx;
     saveProgress();
+    closeMythModal();
 
     // Advance
     setTimeout(() => {
@@ -366,7 +382,8 @@
       "ares","aphrodite","hephaestus","hermes","dionysus","demeter",
       "hades","prometheus","persephone","hecate",
       "heracles","odysseus","achilles","orpheus","sisyphus",
-      "cassandra","medea","icarus","antigone"
+      "cassandra","medea","icarus","antigone",
+      "pandora","circe","narcissus"
     ];
     order.forEach((id) => {
       const c = CHARACTERS[id];
@@ -416,6 +433,39 @@
 
   function closeCharacterModal() {
     const modal = document.getElementById("char-modal");
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  // ---------- Myth story modal ----------
+  function openMythModal(title, story) {
+    const body = document.getElementById("myth-modal-body");
+    if (!body) return;
+    body.innerHTML = `
+      <div class="myth-detail">
+        <header class="myth-detail__header">
+          <p class="myth-detail__kicker">Greek Myth · 神话故事</p>
+          <h2 class="myth-detail__title">${escapeHtml(title)}</h2>
+        </header>
+        <section class="section">
+          <div class="section__body">${paragraphify(story)}</div>
+        </section>
+      </div>
+    `;
+    const modal = document.getElementById("myth-modal");
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    modal.scrollTop = 0;
+    const closeBtn = modal.querySelector(".modal__close");
+    if (closeBtn) closeBtn.focus();
+  }
+
+  function closeMythModal() {
+    const modal = document.getElementById("myth-modal");
+    if (!modal) return;
+    if (!modal.classList.contains("is-open")) return;
     modal.classList.remove("is-open");
     modal.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
@@ -629,11 +679,16 @@
     document.querySelectorAll("#char-modal [data-modal-close]").forEach((el) => {
       el.addEventListener("click", closeCharacterModal);
     });
+    // Myth modal: close via × button, backdrop click, or Escape
+    document.querySelectorAll("#myth-modal [data-myth-modal-close]").forEach((el) => {
+      el.addEventListener("click", closeMythModal);
+    });
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") {
-        const modal = document.getElementById("char-modal");
-        if (modal && modal.classList.contains("is-open")) closeCharacterModal();
-      }
+      if (e.key !== "Escape") return;
+      const myth = document.getElementById("myth-modal");
+      if (myth && myth.classList.contains("is-open")) { closeMythModal(); return; }
+      const chr = document.getElementById("char-modal");
+      if (chr && chr.classList.contains("is-open")) closeCharacterModal();
     });
 
     initStarfield();
