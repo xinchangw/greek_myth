@@ -5,111 +5,111 @@
     {
       id: 41,
       type: "preference",
-      question: "你心目中理想的爱情是什么样子？",
+      question: "你最偏爱哪个季节？",
       options: [
-        { text: "热烈占有，不容他人染指", scores: { zeus: 3, ares: 1 } },
-        { text: "沉迷于美与欲望的漩涡", scores: { aphrodite: 3, dionysus: 1 } },
-        { text: "一生一世，忠贞不渝", scores: { hera: 3, persephone: 1 } },
-        { text: "独身自由，不需要爱情", scores: { artemis: 3, athena: 1 } }
+        { text: "丰饶的金色秋天", scores: { demeter: 3, hera: 1 } },
+        { text: "寒意初起的早春", scores: { persephone: 3, hecate: 1, pandora: 1 } },
+        { text: "葡萄熟透的暮夏", scores: { dionysus: 3, aphrodite: 1 } },
+        { text: "清冷的深冬山野", scores: { artemis: 3, hades: 1 } }
       ]
     },
     {
       id: 42,
       type: "preference",
-      question: "你偏好怎样的友谊？",
+      question: "哪种天气最让你心动？",
       options: [
-        { text: "生死之交，可为其赴死", scores: { achilles: 3, heracles: 1 } },
-        { text: "四海朋友，来去如风", scores: { hermes: 3, dionysus: 1 } },
-        { text: "寡而深，几十年如一日", scores: { hephaestus: 3, demeter: 1 } },
-        { text: "喧闹聚会，举杯同欢", scores: { dionysus: 3, aphrodite: 1 } }
+        { text: "电闪雷鸣的暴雨", scores: { zeus: 3, ares: 1 } },
+        { text: "咸腥的海上风暴", scores: { poseidon: 3, odysseus: 1 } },
+        { text: "万里无云的晴日", scores: { apollo: 3, hermes: 1 } },
+        { text: "雾气弥漫的月夜", scores: { hecate: 3, artemis: 1 } }
       ]
     },
     {
       id: 43,
       type: "preference",
-      question: "你最想拥有的一种能力是？",
+      question: "你最亲近的元素是？",
       options: [
-        { text: "瞬息千里，来去无踪", scores: { hermes: 3, apollo: 1 } },
-        { text: "看穿一切谎言与心思", scores: { athena: 3, odysseus: 1 } },
-        { text: "预知未来的种种可能", scores: { cassandra: 3, apollo: 1 } },
-        { text: "隐身于暗，无人察觉", scores: { hades: 3, hecate: 1 } }
+        { text: "炉中燃烧的火", scores: { hephaestus: 3, prometheus: 1 } },
+        { text: "深不见底的水", scores: { poseidon: 3, hades: 1 } },
+        { text: "自由流动的风", scores: { hermes: 3, icarus: 1 } },
+        { text: "厚重温热的土", scores: { demeter: 3, antigone: 1 } }
       ]
     },
     {
       id: 44,
       type: "preference",
-      question: "你偏爱哪种工作方式？",
+      question: "最吸引你的颜色是？",
       options: [
-        { text: "事前周详策划，步步为营", scores: { athena: 3, odysseus: 1 } },
-        { text: "长时间专注打磨一件事", scores: { hephaestus: 3, demeter: 1 } },
-        { text: "四处游说，以口才服人", scores: { hermes: 3, dionysus: 1 } },
-        { text: "用蛮力硬扛，直接解决", scores: { heracles: 3, ares: 1 } }
+        { text: "灼目的纯金色", scores: { apollo: 3, zeus: 1, narcissus: 1 } },
+        { text: "浓郁的葡萄紫", scores: { dionysus: 3, persephone: 1 } },
+        { text: "无光的墨黑", scores: { hades: 3, hecate: 1 } },
+        { text: "柔软的玫瑰粉", scores: { aphrodite: 3, hera: 1 } }
       ]
     },
     {
       id: 45,
       type: "preference",
-      question: "你偏好怎样的对手？",
+      question: "你最想拥有哪种动物为伴？",
       options: [
-        { text: "强悍勇猛，正面硬碰", scores: { ares: 3, heracles: 1 } },
-        { text: "狡黠多谋，斗智斗勇", scores: { odysseus: 3, hermes: 1 } },
-        { text: "与你一样狠辣果决", scores: { medea: 3, hecate: 1 } },
-        { text: "信念坚定，不可动摇", scores: { antigone: 3, prometheus: 1 } }
+        { text: "盘旋天际的鹰", scores: { zeus: 3, apollo: 1 } },
+        { text: "林中回望的鹿", scores: { artemis: 3, persephone: 1 } },
+        { text: "静立屋檐的枭", scores: { athena: 3, hecate: 1 } },
+        { text: "慵懒舔爪的豹", scores: { dionysus: 3, aphrodite: 1 } }
       ]
     },
     {
       id: 46,
       type: "preference",
-      question: "你会怎样面对一次惨重失败？",
+      question: "哪种乐声最能打动你？",
       options: [
-        { text: "咬牙再推，重头来过", scores: { sisyphus: 3, heracles: 1 } },
-        { text: "反思教训，学会克制", scores: { icarus: 3, athena: 1 } },
-        { text: "嘲笑命运，绝不低头", scores: { prometheus: 3, sisyphus: 1 } },
-        { text: "接受新身份，重新开始", scores: { persephone: 3, demeter: 1 } }
+        { text: "庄严的七弦琴", scores: { apollo: 3, athena: 1 } },
+        { text: "狂放的笛与鼓", scores: { dionysus: 3, ares: 1 } },
+        { text: "催人泪下的竖琴", scores: { orpheus: 3, cassandra: 1 } },
+        { text: "旷野中的牧笛", scores: { hermes: 3, artemis: 1 } }
       ]
     },
     {
       id: 47,
       type: "preference",
-      question: "你最厌恶哪一类人？",
+      question: "你向往怎样的住所？",
       options: [
-        { text: "不敬权威，目无尊长", scores: { zeus: 3, hera: 1 } },
-        { text: "冷漠无情，毫无温度", scores: { aphrodite: 3, dionysus: 1 } },
-        { text: "侵犯我的独处领地", scores: { artemis: 3, hades: 1 } },
-        { text: "不忠不义，背信弃誓", scores: { hera: 3, antigone: 1 } }
+        { text: "金柱高耸的宫殿", scores: { hera: 3, zeus: 1 } },
+        { text: "林间僻静的小屋", scores: { artemis: 3, demeter: 1 } },
+        { text: "幽深的地下宅院", scores: { hades: 3, persephone: 1 } },
+        { text: "礁石环抱的海岛", scores: { odysseus: 3, poseidon: 1, circe: 1 } }
       ]
     },
     {
       id: 48,
       type: "preference",
-      question: "你偏爱的旅行目的地？",
+      question: "你最害怕失去的是？",
       options: [
-        { text: "碧海蓝天，扬帆远航", scores: { poseidon: 3, odysseus: 1 } },
-        { text: "古老遗迹与地下秘境", scores: { hades: 3, hecate: 1 } },
-        { text: "异国他乡的狂欢节庆", scores: { dionysus: 3, hermes: 1 } },
-        { text: "山林幽谷，无人之境", scores: { artemis: 3, orpheus: 1 } }
+        { text: "清明的智识", scores: { athena: 3, prometheus: 1 } },
+        { text: "被回应的爱", scores: { aphrodite: 3, orpheus: 1, pandora: 1 } },
+        { text: "强健的力气", scores: { heracles: 3, ares: 1 } },
+        { text: "看透的真相", scores: { cassandra: 3, hecate: 1 } }
       ]
     },
     {
       id: 49,
       type: "preference",
-      question: "你偏好哪种食物或饮品？",
+      question: "哪种美最让你心动？",
       options: [
-        { text: "自家田地烤出的面包", scores: { demeter: 3, persephone: 1 } },
-        { text: "浓烈的酒，越醉越好", scores: { dionysus: 3, ares: 1 } },
-        { text: "蜜糖与玫瑰甜点", scores: { aphrodite: 3, persephone: 1 } },
-        { text: "工地旁一碗滚烫热食", scores: { hephaestus: 3, heracles: 1 } }
+        { text: "无瑕的完美比例", scores: { apollo: 3, aphrodite: 1, narcissus: 1 } },
+        { text: "忘我的醉态狂喜", scores: { dionysus: 3, orpheus: 1 } },
+        { text: "巧夺天工的器物", scores: { hephaestus: 3, athena: 1 } },
+        { text: "殉道者的悲壮", scores: { antigone: 3, cassandra: 1 } }
       ]
     },
     {
       id: 50,
       type: "preference",
-      question: "被困无人荒岛，你会做什么？",
+      question: "若必须选一种结局，你选？",
       options: [
-        { text: "伐木造船，设法归家", scores: { odysseus: 3, poseidon: 1 } },
-        { text: "对海歌唱，与自然共鸣", scores: { orpheus: 3, apollo: 1 } },
-        { text: "以羽造翼，冒险飞越", scores: { icarus: 3, prometheus: 1 } },
-        { text: "宁愿等死也绝不屈服", scores: { antigone: 3, achilles: 1 } }
+        { text: "战死在沙场上", scores: { achilles: 3, ares: 1 } },
+        { text: "为爱人赴死", scores: { orpheus: 3, icarus: 1 } },
+        { text: "死后仍无尽劳作", scores: { sisyphus: 3, heracles: 1 } },
+        { text: "在花园中被夺走", scores: { persephone: 3, demeter: 1 } }
       ]
     }
   );

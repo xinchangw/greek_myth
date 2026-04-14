@@ -16,7 +16,8 @@
       { id: "athena", reason: "智慧的同盟者，她曾助他盗火，也是他思想上的知音" }
     ],
     rival: [
-      { id: "zeus", reason: "王权与良知的正面对撞，一方握雷霆，一方握火种" }
+      { id: "zeus", reason: "王权与良知的正面对撞，一方握雷霆，一方握火种" },
+      { id: "pandora", reason: "他盗火予人，她被作为回敬之礼送下人间；两者是同一寓言的阴阳两面。" }
     ],
     tension: { id: "hephaestus", reason: "执钉锁者是他的亲友，不得不含泪把他钉上悬崖" }
   };

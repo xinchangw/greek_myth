@@ -17,7 +17,8 @@
       { id: "hephaestus", reason: "跛足匠神以金饰与忍耐筑起婚房，她于其中得一处静水。" }
     ],
     rival: [
-      { id: "artemis", reason: "欲望与贞洁之争，彼此都认为对方辜负了少女的心。" }
+      { id: "artemis", reason: "欲望与贞洁之争，彼此都认为对方辜负了少女的心。" },
+      { id: "narcissus", reason: "他拒绝她所代表的一切情欲与回应，她以「爱不出自己」作为他的咒。" }
     ],
     tension: { id: "hera", reason: "婚姻之后与情欲之神，同为女性却代表截然相反的秩序。" }
   };

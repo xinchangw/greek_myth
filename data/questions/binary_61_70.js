@@ -1,9 +1,9 @@
-// data/questions/binary_51_60.js
+// data/questions/binary_61_70.js
 (function () { "use strict";
   window.QUESTIONS = window.QUESTIONS || [];
   window.QUESTIONS.push(
     {
-      id: 51,
+      id: 61,
       type: "binary",
       question: "若只能选一束光陪你走完此生，你要正午的太阳，还是子夜的月亮？",
       options: [
@@ -12,7 +12,7 @@
       ]
     },
     {
-      id: 52,
+      id: 62,
       type: "binary",
       question: "世界只剩两种元素可选，你愿成为锻造的烈火，还是吞没一切的深海？",
       options: [
@@ -21,7 +21,7 @@
       ]
     },
     {
-      id: 53,
+      id: 63,
       type: "binary",
       question: "若必须押上灵魂，你押给清醒的秩序，还是彻夜的狂欢？",
       options: [
@@ -30,7 +30,7 @@
       ]
     },
     {
-      id: 54,
+      id: 64,
       type: "binary",
       question: "神给你两种死法：在战场上年轻地陨落，或在床榻上白发苍苍？",
       options: [
@@ -39,25 +39,25 @@
       ]
     },
     {
-      id: 55,
+      id: 65,
       type: "binary",
       question: "若舌头只能说一种话，你选说真话却无人相信，还是说谎话却万众欢呼？",
       options: [
-        { text: "说真话却被当作疯子，独自咽下未来", scores: { cassandra: 3, prometheus: 1 } },
+        { text: "说真话却被当作疯子，独自咽下未来", scores: { cassandra: 3, prometheus: 1, pandora: 1 } },
         { text: "说漂亮的谎，让众神与人群都为你鼓掌", scores: { hermes: 3, aphrodite: 1 } }
       ]
     },
     {
-      id: 56,
+      id: 66,
       type: "binary",
       question: "神开出两张契约：永生但无人陪伴，或短命但被深深爱过？",
       options: [
-        { text: "永生独坐冥宫，时间是唯一的王座", scores: { hades: 3, hecate: 1 } },
+        { text: "永生独坐冥宫，时间是唯一的王座", scores: { hades: 3, hecate: 1, narcissus: 1 } },
         { text: "凡人一生，为一次真爱下到地府也值得", scores: { orpheus: 3, persephone: 1 } }
       ]
     },
     {
-      id: 57,
+      id: 67,
       type: "binary",
       question: "城邦的法律与你胸中的良心冲突，你跪下服从，还是站起赴死？",
       options: [
@@ -66,16 +66,16 @@
       ]
     },
     {
-      id: 58,
+      id: 68,
       type: "binary",
       question: "被最爱之人背叛后，你挥刀复仇，还是放下那把刀？",
       options: [
-        { text: "亲手毁掉他所爱的一切，让他尝尽地狱", scores: { medea: 3, hera: 1 } },
+        { text: "亲手毁掉他所爱的一切，让他尝尽地狱", scores: { medea: 3, hera: 1, circe: 1 } },
         { text: "从冥土归来仍带花籽，在伤口上种春天", scores: { persephone: 3, demeter: 1 } }
       ]
     },
     {
-      id: 59,
+      id: 69,
       type: "binary",
       question: "翅膀已装上，你选飞向焚身的太阳，还是守着麦田的黄昏？",
       options: [
@@ -84,7 +84,7 @@
       ]
     },
     {
-      id: 60,
+      id: 70,
       type: "binary",
       question: "命运递来两张门票：推一辈子石头，或用一生苦劳换一夜封神？",
       options: [
