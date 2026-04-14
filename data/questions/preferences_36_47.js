@@ -7,7 +7,7 @@
       type: "preference",
       question: "你最偏爱哪个季节？",
       options: [
-        { text: "丰饶的金色秋天", scores: { demeter: 3, hera: 1 } },
+        { text: "丰饶的金色秋天", scores: { demeter: 3 } },
         { text: "寒意初起的早春", scores: { persephone: 1, hecate: 1, pandora: 1 } },
         { text: "葡萄熟透的暮夏", scores: { dionysus: 3, aphrodite: 1 } },
         { text: "清冷的深冬山野", scores: { artemis: 1, hades: 1 } }
@@ -87,7 +87,7 @@
         { text: "战死在沙场上", scores: { achilles: 3, ares: 1, poseidon: 1, demeter: -1 } },
         { text: "为爱人赴死", scores: { orpheus: 3, icarus: 1, medea: 1 } },
         { text: "死后仍无尽劳作", scores: { sisyphus: 3, heracles: 2 } },
-        { text: "在花园中被悄然带走", scores: { persephone: 1, demeter: 1, pandora: 1 } }
+        { text: "在花园中被悄然带走", scores: { persephone: 1, pandora: 1 } }
       ]
     },
     {
@@ -120,7 +120,7 @@
         { text: "咬牙再推，重头来过", scores: { sisyphus: 3, heracles: 1, antigone: 1 } },
         { text: "再冲一次，哪怕烧毁羽翼", scores: { icarus: 3, ares: 1, achilles: 1 } },
         { text: "把自己钉在原则上，绝不退让", scores: { prometheus: 3, antigone: 1 } },
-        { text: "退回幽暗里，等下一次春天", scores: { persephone: 1, hades: 1, demeter: 1, orpheus: 1, circe: 1 } }
+        { text: "退回幽暗里，等下一次春天", scores: { persephone: 1, hades: 1, orpheus: 1, circe: 1 } }
       ]
     },
     {

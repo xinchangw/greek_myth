@@ -12,7 +12,7 @@
         { text: "全力倾怒。我要让他在每一道浪里都听见我的名字，直到他跪下。", scores: { poseidon: 8, ares: 1 } },
         { text: "与他正面一战——一场像样的风暴，一次干净的沉没，做完就算。", scores: { ares: 3, achilles: 1, poseidon: 1 } },
         { text: "只夺走他最珍视的一样，其余留给他——残忍是刀，不是锤。", scores: { icarus: 3, hermes: 1 } },
-        { text: "一道安静而漫长的诅咒——年复一年的小小不幸，让他不知其所以然。", scores: { hades: 3, medea: 1, circe: 1 } }
+        { text: "一道安静而漫长的诅咒——年复一年的小小不幸，让他不知其所以然。", scores: { hades: 3, circe: 1 } }
       ]
     },
     {
@@ -50,7 +50,7 @@
       options: [
         { text: "一道雷下去。主客之法是我的法，他亵了它，便没有活的余地。", scores: { zeus: 5, ares: 1 } },
         { text: "饶他一命——但烧掉那把王座。腐烂的是王权，不是全体人类。", scores: { prometheus: 3, antigone: 1 } },
-        { text: "收起雷霆——我亲自下凡再访一家，给这一族最后一次被看见的机会。", scores: { prometheus: 3, hermes: 1, demeter: 1 } },
+        { text: "收起雷霆——我亲自下凡再访一家，给这一族最后一次被看见的机会。", scores: { prometheus: 3, hermes: 1 } },
         { text: "留他活着，带着那段记忆——把他变成他心里已然是的那种东西。", scores: { medea: 3, cassandra: 1, hecate: 1 } }
       ]
     }

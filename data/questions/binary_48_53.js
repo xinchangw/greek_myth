@@ -17,7 +17,7 @@
       question: "神给你两种死法：在战场上年轻地陨落，或在床榻上白发苍苍归家？",
       options: [
         { text: "战场上二十岁陨落，名字被千年传唱", scores: { achilles: 3, ares: 1 } },
-        { text: "辗转十年终回故土，抱着妻儿闭眼", scores: { odysseus: 3, demeter: 1 } }
+        { text: "辗转十年终回故土，抱着妻儿闭眼", scores: { odysseus: 3 } }
       ]
     },
     {

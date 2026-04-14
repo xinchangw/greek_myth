@@ -9,9 +9,9 @@
       mythStory: "不和女神厄里斯被人们漏请婚宴，怀恨之下把一只金苹果抛到宴席中央，上面刻着「献给最美的女神」。赫拉、雅典娜、阿芙洛狄忒三位女神同时伸手，无人能让步。\n\n宙斯不愿在妻子与女儿之间定断，便把这桩差事推给人间最俊美的年轻人——特洛伊王子帕里斯。三位女神来到伊达山上，各自许下重诺：赫拉答应让他做亚细亚的最高王者，雅典娜许他战无不胜的智慧与勇气，阿芙洛狄忒则许他娶到世间最美的女人。\n\n帕里斯把金苹果交给了阿芙洛狄忒。不久，他乘船远航，带走了斯巴达王后海伦——十年的特洛伊战争就此埋下伏笔。一颗果子换来一座城的火与灰烬。",
       question: "三位女神把金苹果递到你面前，各自开出足以改写一生的承诺。你要把它给谁？",
       options: [
-        { text: "给阿芙洛狄忒——我要那份最真切的爱与美，哪怕她只是许我心之所向。", scores: { aphrodite: 8, narcissus: 1, medea: 1 } },
+        { text: "给阿芙洛狄忒——我要那份最真切的爱与美，哪怕她只是许我心之所向。", scores: { aphrodite: 8, narcissus: 1 } },
         { text: "给赫拉——让我成为一方之主，我要的是权柄和秩序。", scores: { hera: 3, zeus: 1 } },
-        { text: "给雅典娜——智慧与百战不败比任何承诺都靠得住。", scores: { athena: 3, prometheus: 1 } },
+        { text: "给雅典娜——智慧与百战不败比任何承诺都靠得住。", scores: { athena: 3 } },
         { text: "我不敢接这苹果，偷偷把它埋了，让三位自己再去争。", scores: { hermes: 2, cassandra: 1, pandora: 1 } }
       ]
     },
@@ -49,7 +49,7 @@
       question: "神谕摆在你面前：短而灼目的一生 · 或漫长却平静被遗忘的一生。你会选哪一条？",
       options: [
         { text: "去特洛伊。我宁愿灿烂地燃尽一次，也不要被岁月磨平。", scores: { achilles: 8, icarus: 1 } },
-        { text: "留在家里。和爱的人一起慢慢老去，比任何诗行都珍贵。", scores: { demeter: 3, hera: 1 } },
+        { text: "留在家里。和爱的人一起慢慢老去，比任何诗行都珍贵。", scores: { demeter: 3 } },
         { text: "我不接受二选一。给我三天，我去找第三条路。", scores: { odysseus: 3, prometheus: 1 } },
         { text: "先去再说，反正命运是给我推石头用的，我推便是。", scores: { sisyphus: 3, heracles: 1 } }
       ]
@@ -193,7 +193,7 @@
       options: [
         { text: "绑在桅杆上。我要亲耳听一次，哪怕要预先给自己上锁。", scores: { odysseus: 8, circe: 1 } },
         { text: "塞上耳朵、埋头划桨——这种东西听都不该听。", scores: { hera: 3, artemis: 1 } },
-        { text: "绕开这片海。世上的路不止一条，不必非穿这段。", scores: { hermes: 2, demeter: 1, circe: 1 } },
+        { text: "绕开这片海。世上的路不止一条，不必非穿这段。", scores: { hermes: 2, circe: 1 } },
         { text: "跳下去。如果真要毁，就毁得彻底一点。", scores: { icarus: 3, achilles: 1, poseidon: 1 } }
       ]
     },
@@ -218,7 +218,7 @@
       question: "你爱上了一个异乡来客，他若活下去，必须要你背叛父亲、家邦、乃至斩断与过去的一切血脉。这一夜你会：",
       options: [
         { text: "把药方交给他。从今以后我只有他，回不去的家就不再是家。", scores: { medea: 8, aphrodite: 1, pandora: 1 } },
-        { text: "按下那只手。再爱他，父亲的血也不能染在我身上。", scores: { antigone: 3, hera: 1, demeter: 1 } },
+        { text: "按下那只手。再爱他，父亲的血也不能染在我身上。", scores: { antigone: 3, demeter: 1 } },
         { text: "只救他一次，不随他走——让他自己去扛自己的命运。", scores: { athena: 3, artemis: 1 } },
         { text: "陪他走，但我不杀任何人，我只做他最后的护身符。", scores: { persephone: 3, orpheus: 1, circe: 1 } }
       ]
