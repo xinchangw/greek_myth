@@ -81,6 +81,7 @@
     hecate:      placeholder("Ψ", "Hecate · 赫卡忒"),
     odysseus:    placeholder("O", "Odysseus · 奥德修斯"),
     achilles:    placeholder("Α", "Achilles · 阿喀琉斯"),
+    heracles:    placeholder("Ἡ", "Heracles · 赫拉克勒斯"),
     sisyphus:    placeholder("Σ", "Sisyphus · 西西弗斯"),
     orpheus:     placeholder("Ο", "Orpheus · 俄耳甫斯"),
     cassandra:   placeholder("K", "Cassandra · 卡珊德拉"),
