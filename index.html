@@ -32,7 +32,7 @@
         <div class="intro-meta">
           <span>· 60 道题</span>
           <span>· 约 8 分钟</span>
-          <span>· 24 位希腊神祇与英雄</span>
+          <span>· 25 位希腊神祇与英雄</span>
         </div>
         <div class="intro-actions">
           <button id="btn-start" class="btn btn--primary">开启神谕</button>
@@ -80,8 +80,44 @@
   </main>
 
   <script src="data/icons.js"></script>
+
+  <!-- Characters: aggregator first, then one file per character -->
   <script src="data/characters.js"></script>
+  <script src="data/characters/zeus.js"></script>
+  <script src="data/characters/hera.js"></script>
+  <script src="data/characters/poseidon.js"></script>
+  <script src="data/characters/athena.js"></script>
+  <script src="data/characters/apollo.js"></script>
+  <script src="data/characters/artemis.js"></script>
+  <script src="data/characters/ares.js"></script>
+  <script src="data/characters/aphrodite.js"></script>
+  <script src="data/characters/hephaestus.js"></script>
+  <script src="data/characters/hermes.js"></script>
+  <script src="data/characters/dionysus.js"></script>
+  <script src="data/characters/demeter.js"></script>
+  <script src="data/characters/hades.js"></script>
+  <script src="data/characters/prometheus.js"></script>
+  <script src="data/characters/persephone.js"></script>
+  <script src="data/characters/hecate.js"></script>
+  <script src="data/characters/heracles.js"></script>
+  <script src="data/characters/odysseus.js"></script>
+  <script src="data/characters/achilles.js"></script>
+  <script src="data/characters/orpheus.js"></script>
+  <script src="data/characters/sisyphus.js"></script>
+  <script src="data/characters/cassandra.js"></script>
+  <script src="data/characters/medea.js"></script>
+  <script src="data/characters/icarus.js"></script>
+  <script src="data/characters/antigone.js"></script>
+
+  <!-- Questions: each batch pushes items, then aggregator sorts -->
+  <script src="data/questions/scenarios_01_10.js"></script>
+  <script src="data/questions/scenarios_11_20.js"></script>
+  <script src="data/questions/scenarios_21_30.js"></script>
+  <script src="data/questions/preferences_31_40.js"></script>
+  <script src="data/questions/preferences_41_50.js"></script>
+  <script src="data/questions/binary_51_60.js"></script>
   <script src="data/questions.js"></script>
+
   <script src="app.js"></script>
 </body>
 </html>

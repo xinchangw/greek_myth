@@ -267,10 +267,10 @@
       </section>
 
       <section class="section">
-        <div class="section__label">Oracle · 神话忠告</div>
+        <div class="section__label">Oracle · 神话原典</div>
         <blockquote class="quote">
           ${escapeHtml(character.quote)}
-          <span class="quote__attr">— ${character.nameZh} · ${character.nameEn}</span>
+          <span class="quote__attr">— ${escapeHtml(character.quoteSource || (character.nameZh + " · " + character.nameEn))}</span>
         </blockquote>
       </section>
 
