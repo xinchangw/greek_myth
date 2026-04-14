@@ -24,7 +24,7 @@
       options: [
         { text: "派一只百目巨人日夜盯住她——他要宠，就得让她连一刻安生都不得。", scores: { hera: 8, medea: 1 } },
         { text: "亲手收拾她，不假他人之手。我嫁妆里就有药。", scores: { medea: 3, circe: 1, hecate: 1 } },
-        { text: "冲进去当面把他与她一起撕开，话当场讲清。", scores: { ares: 3, poseidon: 1 } },
+        { text: "冲进去当面把他与她一起撕开，话当场讲清。", scores: { ares: 3, poseidon: 1, achilles: 1 } },
         { text: "说出去给全城人听——让这段风流成为他的耻辱。", scores: { cassandra: 3, apollo: 1, pandora: 1 } }
       ]
     }

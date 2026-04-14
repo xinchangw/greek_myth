@@ -7,8 +7,8 @@
       type: "binary",
       question: "世界只剩两种元素可选，你愿成为锻造的烈火，还是吞没一切的深海？",
       options: [
-        { text: "炉膛中的火焰，把苦难敲打成有用之物", scores: { hephaestus: 3, prometheus: 1 } },
-        { text: "无岸的深海，沉默却能掀翻所有王座", scores: { poseidon: 3, hades: 1 } }
+        { text: "炉膛中的火焰，把苦难敲打成有用之物", scores: { hephaestus: 1, prometheus: 1 } },
+        { text: "无岸的深海，沉默却能掀翻所有王座", scores: { poseidon: 1, hades: 1 } }
       ]
     },
     {
@@ -25,7 +25,7 @@
       type: "binary",
       question: "城邦的法律与你胸中的良心冲突，你跪下服从，还是站起赴死？",
       options: [
-        { text: "服从宙斯的法律，秩序高于一切血亲", scores: { zeus: 3, hera: 1, dionysus: -1 } },
+        { text: "服从宙斯的法律，秩序高于一切血亲", scores: { zeus: 3, hera: 1, apollo: 1, dionysus: -1 } },
         { text: "违抗王令葬兄，宁死不让良心折腰", scores: { antigone: 3, persephone: 1, pandora: 1 } }
       ]
     },
@@ -35,7 +35,7 @@
       question: "被最爱之人背叛后，你挥刀复仇，还是放下那把刀？",
       options: [
         { text: "亲手毁掉他所爱的一切，让他尝尽地狱", scores: { medea: 3, hera: 1, circe: 1 } },
-        { text: "从冥土归来仍带花籽，在伤口上种春天", scores: { persephone: 3, demeter: 1 } }
+        { text: "从冥土归来仍带花籽，在伤口上种春天", scores: { persephone: 1, demeter: 1 } }
       ]
     },
     {
