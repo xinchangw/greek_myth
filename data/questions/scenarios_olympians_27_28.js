@@ -23,7 +23,7 @@
       question: "你刚刚（以才思与胆量）干了一件别人不可能让你全身而退的事，对方把你拎到最高法庭。你怎么过这一关？",
       options: [
         { text: "抱起我随手发明的那件小玩意儿，当众弹一曲——等他听醉了，再与他谈条件。", scores: { hermes: 8, apollo: 1 } },
-        { text: "我就是受害者那一方——我要当众对质，一笔账一笔算清。", scores: { apollo: 3, zeus: 1 } },
+        { text: "一口咬定不是我——等他拿不出证据，再反咬他一口。", scores: { odysseus: 3, hermes: 1 } },
         { text: "摊开双手说这只是一时好奇，我并没有想过真的要留下它。", scores: { pandora: 3, icarus: 1, narcissus: 1 } },
         { text: "照实把全过程讲一遍——反正我说的话他们从来只听半句。", scores: { cassandra: 3, antigone: 1, orpheus: 1 } }
       ]
