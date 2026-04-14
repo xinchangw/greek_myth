@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>你是希腊神话里的哪一位？ | Which Greek God Are You</title>
+  <meta name="description" content="一场关于灵魂原型的测试——回答 60 道题，找到隐藏在你身上的希腊神祇。" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Serif+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+  <main id="app">
+    <!-- Intro -->
+    <section id="view-intro" class="view view--active">
+      <div class="intro-inner">
+        <p class="intro-kicker">A Mythopoetic Personality Test</p>
+        <h1 class="intro-title">
+          <span class="intro-title__en">Which Greek God Are You</span>
+          <span class="intro-title__zh">你是希腊神话里的哪一位？</span>
+        </h1>
+        <div class="meander meander--gold"></div>
+        <p class="intro-lede">
+          众神并未远去。他们化作你每一次犹豫、每一次狂喜、每一次回头的瞬间。<br />
+          回答 60 个问题，让奥林匹斯的十二位主神与十二位传奇英雄，在你的灵魂里投下签文。
+        </p>
+        <div class="intro-meta">
+          <span>· 60 道题</span>
+          <span>· 约 8 分钟</span>
+          <span>· 24 位希腊神祇与英雄</span>
+        </div>
+        <div class="intro-actions">
+          <button id="btn-start" class="btn btn--primary">开启神谕</button>
+          <button id="btn-resume" class="btn btn--ghost" hidden>继续上次测试</button>
+        </div>
+        <p class="intro-foot">图像由 SVG 绘制 · 纯静态页面 · 数据仅存于浏览器</p>
+      </div>
+    </section>
+
+    <!-- Quiz -->
+    <section id="view-quiz" class="view">
+      <header class="quiz-header">
+        <div class="quiz-progress" id="quiz-progress" aria-label="测试进度"></div>
+        <div class="quiz-counter"><span id="quiz-current">1</span> / <span id="quiz-total">60</span></div>
+      </header>
+      <article class="quiz-card" id="quiz-card">
+        <div class="quiz-type" id="quiz-type">SCENARIO</div>
+        <h2 class="quiz-question" id="quiz-question"></h2>
+        <div class="quiz-options" id="quiz-options"></div>
+      </article>
+      <footer class="quiz-footer">
+        <button id="btn-prev" class="btn btn--ghost btn--sm">← 上一题</button>
+        <button id="btn-restart-mid" class="btn btn--ghost btn--sm">放弃重来</button>
+      </footer>
+    </section>
+
+    <!-- Calculating -->
+    <section id="view-calculating" class="view">
+      <div class="calc-inner">
+        <div class="calc-orb">
+          <div class="calc-orb__ring"></div>
+          <div class="calc-orb__ring calc-orb__ring--2"></div>
+          <div class="calc-orb__ring calc-orb__ring--3"></div>
+          <div class="calc-orb__core"></div>
+        </div>
+        <p class="calc-line">众神正在审视你的灵魂……</p>
+        <p class="calc-sub">Οι θεοί κρίνουν τώρα</p>
+      </div>
+    </section>
+
+    <!-- Result -->
+    <section id="view-result" class="view">
+      <article class="result" id="result-body"></article>
+    </section>
+  </main>
+
+  <script src="data/icons.js"></script>
+  <script src="data/characters.js"></script>
+  <script src="data/questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
