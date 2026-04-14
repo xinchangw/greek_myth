@@ -44,7 +44,7 @@
       question: "若舌头只能说一种话，你选说真话却无人相信，还是说谎话却万众欢呼？",
       options: [
         { text: "说真话却被当作疯子，独自咽下未来", scores: { cassandra: 3, prometheus: 1, pandora: 1 } },
-        { text: "说漂亮的谎，让众神与人群都为你鼓掌", scores: { hermes: 3, aphrodite: 1 } }
+        { text: "说漂亮的谎，让众神与人群都为你鼓掌", scores: { hermes: 3, aphrodite: 1, narcissus: 1 } }
       ]
     },
     {
@@ -52,7 +52,7 @@
       type: "binary",
       question: "神开出两张契约：永生但无人陪伴，或短命但被深深爱过？",
       options: [
-        { text: "永生独坐冥宫，时间是唯一的王座", scores: { hades: 3, hecate: 1, narcissus: 1 } },
+        { text: "永生独坐冥宫，时间是唯一的王座", scores: { hades: 3, hecate: 1, narcissus: 1, circe: 1 } },
         { text: "凡人一生，为一次真爱下到地府也值得", scores: { orpheus: 3, persephone: 1 } }
       ]
     },
@@ -62,7 +62,7 @@
       question: "城邦的法律与你胸中的良心冲突，你跪下服从，还是站起赴死？",
       options: [
         { text: "服从宙斯的法律，秩序高于一切血亲", scores: { zeus: 3, hera: 1 } },
-        { text: "违抗王令葬兄，宁死不让良心折腰", scores: { antigone: 3, persephone: 1 } }
+        { text: "违抗王令葬兄，宁死不让良心折腰", scores: { antigone: 3, persephone: 1, pandora: 1 } }
       ]
     },
     {
@@ -70,7 +70,7 @@
       type: "binary",
       question: "被最爱之人背叛后，你挥刀复仇，还是放下那把刀？",
       options: [
-        { text: "亲手毁掉他所爱的一切，让他尝尽地狱", scores: { medea: 3, hera: 1, circe: 1 } },
+        { text: "亲手毁掉他所爱的一切，让他尝尽地狱", scores: { medea: 3, hera: 1, circe: 1, poseidon: 1 } },
         { text: "从冥土归来仍带花籽，在伤口上种春天", scores: { persephone: 3, demeter: 1 } }
       ]
     },
@@ -79,7 +79,7 @@
       type: "binary",
       question: "翅膀已装上，你选飞向焚身的太阳，还是守着麦田的黄昏？",
       options: [
-        { text: "再高一点，哪怕羽毛熔化坠入蓝海", scores: { icarus: 3, prometheus: 1 } },
+        { text: "再高一点，哪怕羽毛熔化坠入蓝海", scores: { icarus: 3, prometheus: 1, pandora: 1 } },
         { text: "低低掠过麦浪，把根扎回泥土里", scores: { demeter: 3, hephaestus: 1 } }
       ]
     },

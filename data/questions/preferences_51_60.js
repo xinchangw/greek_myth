@@ -20,7 +20,7 @@
       options: [
         { text: "生死之交，可为其赴死", scores: { achilles: 3, heracles: 1 } },
         { text: "四海朋友，来去如风", scores: { hermes: 3, dionysus: 1 } },
-        { text: "寡而深，几十年如一日", scores: { hephaestus: 3, demeter: 1 } },
+        { text: "寡而深，几十年如一日", scores: { hephaestus: 3, demeter: 1, circe: 1, sisyphus: 1 } },
         { text: "喧闹聚会，举杯同欢", scores: { dionysus: 3, aphrodite: 1 } }
       ]
     },
@@ -41,7 +41,7 @@
       question: "你偏爱哪种工作方式？",
       options: [
         { text: "事前周详策划，步步为营", scores: { athena: 3, odysseus: 1 } },
-        { text: "长时间专注打磨一件事", scores: { hephaestus: 3, demeter: 1 } },
+        { text: "长时间专注打磨一件事", scores: { hephaestus: 3, demeter: 1, sisyphus: 1 } },
         { text: "四处游说，以口才服人", scores: { hermes: 3, dionysus: 1 } },
         { text: "用蛮力硬扛，直接解决", scores: { heracles: 3, ares: 1 } }
       ]
@@ -65,7 +65,7 @@
         { text: "咬牙再推，重头来过", scores: { sisyphus: 3, heracles: 1 } },
         { text: "反思教训，学会克制", scores: { icarus: 3, athena: 1 } },
         { text: "嘲笑命运，绝不低头", scores: { prometheus: 3, sisyphus: 1 } },
-        { text: "接受新身份，重新开始", scores: { persephone: 3, demeter: 1 } }
+        { text: "接受新身份，重新开始", scores: { persephone: 3, demeter: 1, pandora: 1 } }
       ]
     },
     {
@@ -74,9 +74,9 @@
       question: "你最厌恶哪一类人？",
       options: [
         { text: "不敬权威，目无尊长", scores: { zeus: 3, hera: 1 } },
-        { text: "冷漠无情，毫无温度", scores: { aphrodite: 3, dionysus: 1 } },
+        { text: "冷漠无情，毫无温度", scores: { aphrodite: 3, dionysus: 1, narcissus: 1 } },
         { text: "侵犯我的独处领地", scores: { artemis: 3, hades: 1, circe: 1 } },
-        { text: "不忠不义，背信弃誓", scores: { hera: 3, antigone: 1 } }
+        { text: "不忠不义，背信弃誓", scores: { medea: 3, hera: 1, antigone: 1 } }
       ]
     },
     {
@@ -86,7 +86,7 @@
       options: [
         { text: "碧海蓝天，扬帆远航", scores: { poseidon: 3, odysseus: 1 } },
         { text: "古老遗迹与地下秘境", scores: { hades: 3, hecate: 1 } },
-        { text: "异国他乡的狂欢节庆", scores: { dionysus: 3, hermes: 1 } },
+        { text: "异国他乡的狂欢节庆", scores: { dionysus: 3, hermes: 1, pandora: 1 } },
         { text: "山林幽谷，无人之境", scores: { artemis: 3, orpheus: 1, circe: 1 } }
       ]
     },
@@ -97,8 +97,8 @@
       options: [
         { text: "自家田地烤出的面包", scores: { demeter: 3, persephone: 1 } },
         { text: "浓烈的酒，越醉越好", scores: { dionysus: 3, ares: 1 } },
-        { text: "蜜糖与玫瑰甜点", scores: { aphrodite: 3, persephone: 1 } },
-        { text: "工地旁一碗滚烫热食", scores: { hephaestus: 3, heracles: 1 } }
+        { text: "蜜糖与玫瑰甜点", scores: { aphrodite: 3, persephone: 1, pandora: 1 } },
+        { text: "工地旁一碗滚烫热食", scores: { hephaestus: 3, heracles: 1, sisyphus: 1 } }
       ]
     },
     {

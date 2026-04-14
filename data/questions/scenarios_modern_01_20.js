@@ -20,7 +20,7 @@
       options: [
         { text: "忍不住拆了一封，只看一眼就好——结果越读越乱。", scores: { orpheus: 3, cassandra: 1, pandora: 1 } },
         { text: "把信放回枕下，给自己倒杯水，信任是此刻唯一能做的事。", scores: { persephone: 3, hera: 1 } },
-        { text: "连夜备马赶去找他，有什么话当面问个清楚。", scores: { ares: 3, hera: 1 } },
+        { text: "连夜备马赶去找他，有什么话当面问个清楚。", scores: { ares: 3, hera: 1, poseidon: 1 } },
         { text: "把这份不安写成一封长信，等重逢时亲手递给他。", scores: { apollo: 3, demeter: 1 } }
       ]
     },
@@ -31,7 +31,7 @@
       options: [
         { text: "通宵再作七卷，趁势冲顶，哪怕烧尽灵感也值得。", scores: { icarus: 3, achilles: 1, narcissus: 1 } },
         { text: "回到缓慢的节奏，写得久远比写得刺眼更重要。", scores: { demeter: 3, hera: 1 } },
-        { text: "去请教懂避灵思枯竭之道的前辈，找一条既快又不触禁的路。", scores: { athena: 3, hermes: 1 } },
+        { text: "去请教懂避灵思枯竭之道的前辈，找一条既快又不触禁的路。", scores: { athena: 3, hermes: 1, circe: 1 } },
         { text: "把已写的抄本一次卖给最富的贵族，见好就收。", scores: { hermes: 3, hades: 1 } }
       ]
     },
@@ -75,7 +75,7 @@
       options: [
         { text: "规划最曲折的航线，一程一程换船挪回去。", scores: { odysseus: 3, hermes: 1 } },
         { text: "干脆不回了，托人捎一封家书也一样过节。", scores: { hades: 3, hephaestus: 1, circe: 1 } },
-        { text: "雇最贵的私船走直线，透支也要今夜靠岸。", scores: { achilles: 3, icarus: 1 } },
+        { text: "雇最贵的私船走直线，透支也要今夜靠岸。", scores: { achilles: 3, icarus: 1, narcissus: 1 } },
         { text: "留在码头，召集同样回不去的旅人一起办一场异乡夜宴。", scores: { dionysus: 3, demeter: 1 } }
       ]
     },
@@ -84,7 +84,7 @@
       type: "scenario",
       question: "你筹备半年的仪典在今夜举行，你却病倒在家。台上所有的光都落在代你主持的同伴身上。",
       options: [
-        { text: "从幕后默默盯着一切器物运作，成品漂亮就够了。", scores: { hephaestus: 3, prometheus: 1 } },
+        { text: "从幕后默默盯着一切器物运作，成品漂亮就够了。", scores: { hephaestus: 3, prometheus: 1, sisyphus: 1 } },
         { text: "心里不是滋味，录下一段话让人在台上替你宣读。", scores: { aphrodite: 3, ares: 1, narcissus: 1 } },
         { text: "关上门窗出去散步，不给自己看那个热闹。", scores: { artemis: 3, hades: 1 } },
         { text: "把自己筹备的每一处细节写成长卷，寄给有心人。", scores: { apollo: 3, athena: 1 } }
@@ -106,8 +106,8 @@
       type: "scenario",
       question: "你发现长期伴侣背着你与别人眉目传情，对方还给出了一套冠冕堂皇的解释。",
       options: [
-        { text: "冷静收集蛛丝马迹，在合适时机连本带利追究到底。", scores: { hera: 3, athena: 1 } },
-        { text: "当场翻脸，有什么事说什么事，绝不隐忍。", scores: { ares: 3, hera: 1 } },
+        { text: "冷静收集蛛丝马迹，在合适时机连本带利追究到底。", scores: { medea: 3, hera: 1, athena: 1 } },
+        { text: "当场翻脸，有什么事说什么事，绝不隐忍。", scores: { ares: 3, hera: 1, poseidon: 1 } },
         { text: "装作没看见，继续经营自己的生活和远方。", scores: { demeter: 3, persephone: 1 } },
         { text: "当夜收拾行李离开，连解释的机会都不给。", scores: { artemis: 3, hecate: 1 } }
       ]
@@ -117,9 +117,9 @@
       type: "scenario",
       question: "你被一位气质独特的人吸引，主动写信、送礼、邀约相见。对方却始终温和地与你保持距离。",
       options: [
-        { text: "继续用真诚与热度去打动，相信心诚所至终能破冰。", scores: { apollo: 3, aphrodite: 1, narcissus: 1 } },
+        { text: "继续用真诚与热度去打动，相信心诚所至终能破冰。", scores: { apollo: 3, aphrodite: 1, narcissus: 1, sisyphus: 1, pandora: 1 } },
         { text: "改用巧思与小心机，制造一次又一次看似偶然的相遇。", scores: { hermes: 3, aphrodite: 1 } },
-        { text: "停下来尊重对方的边界，默默祝福，转身离开。", scores: { artemis: 3, athena: 1 } },
+        { text: "停下来尊重对方的边界，默默祝福，转身离开。", scores: { artemis: 3, athena: 1, circe: 1 } },
         { text: "把这份失落写成一首长歌，让所有人都知道这段故事。", scores: { orpheus: 3, apollo: 1 } }
       ]
     },
@@ -128,7 +128,7 @@
       type: "scenario",
       question: "你独自穿林而行，撞见几个陌生人架起网子猎杀林中幼鹿，还嬉笑着拍手。只有你一人看见这一幕。",
       options: [
-        { text: "独自上前制止，必要时撕网砸弓也在所不惜。", scores: { artemis: 3, ares: 1 } },
+        { text: "独自上前制止，必要时撕网砸弓也在所不惜。", scores: { artemis: 3, ares: 1, poseidon: 1 } },
         { text: "远处屏息留下证据，回城立刻报予林官与乡议。", scores: { athena: 3, hecate: 1 } },
         { text: "把这一幕刻写成檄文，让舆论替野地出头。", scores: { hermes: 3, apollo: 1 } },
         { text: "心里难过但选择走开，这不是自己能管的事。", scores: { demeter: 3, persephone: 1 } }
@@ -150,10 +150,10 @@
       type: "scenario",
       question: "三位祭司学徒的最终试炼只取一人。你听说主祭极看重「眼缘」与「气场」，胜过一切卷轴功课。你怎么准备？",
       options: [
-        { text: "精心打磨衣饰、语气、微笑，让主祭第一眼就喜欢你。", scores: { aphrodite: 3, apollo: 1, narcissus: 1 } },
+        { text: "精心打磨衣饰、语气、微笑，让主祭第一眼就喜欢你。", scores: { narcissus: 3, aphrodite: 1, apollo: 1 } },
         { text: "把这几年读过的经卷拆成硬功夫，用专业碾压另外两人。", scores: { athena: 3, hephaestus: 1 } },
         { text: "提前向熟人打听主祭的偏好，量身准备一套说辞。", scores: { hermes: 3, aphrodite: 1 } },
-        { text: "保持本色，靠表演赢来的位置也守不长。", scores: { artemis: 3, hades: 1 } }
+        { text: "保持本色，靠表演赢来的位置也守不长。", scores: { artemis: 3, hades: 1, circe: 1 } }
       ]
     },
     {
@@ -174,7 +174,7 @@
       options: [
         { text: "一杯接一杯，带头跳上场中，让所有人都跟着疯。", scores: { dionysus: 3, ares: 1 } },
         { text: "喝两杯暖场，保持分寸，主要照看喝多了的同伴。", scores: { hera: 3, demeter: 1 } },
-        { text: "只碰一点，躲到角落与一两个人聊深一点的话题。", scores: { hades: 3, athena: 1 } },
+        { text: "只碰一点，躲到角落与一两个人聊深一点的话题。", scores: { hades: 3, athena: 1, circe: 1 } },
         { text: "不碰酒，抱起琴来把篝火旁变成自己的舞台。", scores: { apollo: 3, orpheus: 1 } }
       ]
     },
@@ -194,8 +194,8 @@
       type: "scenario",
       question: "深夜，你站在三条看不清尽头的岔路口，每一条都可能改写此后的一生，也都没有回头的票。",
       options: [
-        { text: "我先不选，站在此处看别人怎么走，再决定。", scores: { hecate: 3, athena: 1 } },
-        { text: "走最危险那条，只有险的才配我走。", scores: { achilles: 3, icarus: 1 } },
+        { text: "我先不选，站在此处看别人怎么走，再决定。", scores: { hecate: 3, athena: 1, circe: 1 } },
+        { text: "走最危险那条，只有险的才配我走。", scores: { achilles: 3, icarus: 1, poseidon: 1 } },
         { text: "唤醒身边所有朋友，一起帮我拆解。", scores: { hermes: 3, dionysus: 1 } },
         { text: "闭上眼问直觉，然后头也不回地走。", scores: { artemis: 3, orpheus: 1 } }
       ]
@@ -216,7 +216,7 @@
       type: "scenario",
       question: "一位挚友深夜来敲门求你帮个大忙。这个忙会明显消耗你自己的时间、钱粮，甚至前途。",
       options: [
-        { text: "不问条件，我先到场再说。", scores: { heracles: 3, achilles: 1 } },
+        { text: "不问条件，我先到场再说。", scores: { heracles: 3, achilles: 1, poseidon: 1 } },
         { text: "帮，但我要让他清楚我这次担了什么。", scores: { prometheus: 3, hephaestus: 1 } },
         { text: "用最聪明的方式帮，让代价降到最低。", scores: { odysseus: 3, hermes: 1 } },
         { text: "我帮不了，我有自己的边界。", scores: { artemis: 3, athena: 1 } }
