@@ -37,8 +37,24 @@
         <div class="intro-actions">
           <button id="btn-start" class="btn btn--primary">开启神谕</button>
           <button id="btn-resume" class="btn btn--ghost" hidden>继续上次测试</button>
+          <button id="btn-gallery-intro" class="btn btn--ghost">浏览万神殿</button>
         </div>
         <p class="intro-foot">图像由 SVG 绘制 · 纯静态页面 · 数据仅存于浏览器</p>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="view-gallery" class="view">
+      <div class="gallery-inner">
+        <header class="gallery-header">
+          <p class="gallery-kicker">Pantheon · 万神殿</p>
+          <h1 class="gallery-title">二十五位神祇与英雄</h1>
+          <p class="gallery-lede">点开任意一位，阅览他们的神话、光影与原典引文。</p>
+        </header>
+        <div class="gallery-grid" id="gallery-grid"></div>
+        <div class="gallery-actions">
+          <button id="btn-gallery-back" class="btn btn--ghost btn--sm">← 返回</button>
+        </div>
       </div>
     </section>
 
@@ -78,6 +94,15 @@
       <article class="result" id="result-body"></article>
     </section>
   </main>
+
+  <!-- Character detail modal (overlay, outside views) -->
+  <div id="char-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__dialog" role="document">
+      <button class="modal__close" type="button" aria-label="关闭" data-modal-close>×</button>
+      <div class="modal__body" id="char-modal-body"></div>
+    </div>
+  </div>
 
   <script src="data/icons.js"></script>
 

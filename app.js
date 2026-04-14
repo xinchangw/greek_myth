@@ -12,7 +12,11 @@
     quiz: document.getElementById("view-quiz"),
     calculating: document.getElementById("view-calculating"),
     result: document.getElementById("view-result"),
+    gallery: document.getElementById("view-gallery"),
   };
+
+  // Where to return when the user leaves the gallery. Set when entering.
+  let galleryReturnView = "intro";
 
   const state = {
     current: 0,
@@ -231,7 +235,7 @@
           </div>
           <div class="composition__legend">
             ${compositions.map((c, i) => `
-              <span>
+              <span class="is-clickable" data-char-id="${c.character.id}" role="button" tabindex="0">
                 <span class="swatch" style="background:${segColor(i)}"></span>
                 ${c.pct}% ${c.character.nameZh}
               </span>
@@ -278,21 +282,21 @@
         <div class="section__label">Affinities · 关系相性</div>
         <div class="relations">
           ${character.bestMatch.map((r) => `
-            <div class="relation relation--match">
+            <div class="relation relation--match is-clickable" data-char-id="${r.id}" role="button" tabindex="0">
               <div class="relation__type">最佳拍档 · BEST MATCH</div>
               <div class="relation__name">${CHARACTERS[r.id] ? CHARACTERS[r.id].nameZh : r.id} · ${CHARACTERS[r.id] ? CHARACTERS[r.id].nameEn : ""}</div>
               <div class="relation__reason">${escapeHtml(r.reason)}</div>
             </div>
           `).join("")}
           ${character.rival.map((r) => `
-            <div class="relation relation--rival">
+            <div class="relation relation--rival is-clickable" data-char-id="${r.id}" role="button" tabindex="0">
               <div class="relation__type">天生宿敌 · NEMESIS</div>
               <div class="relation__name">${CHARACTERS[r.id] ? CHARACTERS[r.id].nameZh : r.id} · ${CHARACTERS[r.id] ? CHARACTERS[r.id].nameEn : ""}</div>
               <div class="relation__reason">${escapeHtml(r.reason)}</div>
             </div>
           `).join("")}
           ${character.tension ? `
-            <div class="relation relation--tension">
+            <div class="relation relation--tension is-clickable" data-char-id="${character.tension.id}" role="button" tabindex="0">
               <div class="relation__type">暧昧张力 · TENSION</div>
               <div class="relation__name">${CHARACTERS[character.tension.id] ? CHARACTERS[character.tension.id].nameZh : character.tension.id} · ${CHARACTERS[character.tension.id] ? CHARACTERS[character.tension.id].nameEn : ""}</div>
               <div class="relation__reason">${escapeHtml(character.tension.reason)}</div>
@@ -303,7 +307,7 @@
 
       <section class="section">
         <div class="section__label">Your Shadow Self · 你的阴影面</div>
-        <div class="shadow-card">
+        <div class="shadow-card is-clickable" data-char-id="${shadowChar.id}" role="button" tabindex="0">
           <div class="shadow-card__label">LEAST RESONANT · 最不像你</div>
           <div class="shadow-card__name">${shadowChar.nameZh} · ${shadowChar.nameEn}</div>
           <div class="shadow-card__hint">${escapeHtml(shadowChar.archetype)}——这是你最陌生的原型，也可能是你最需要学习的一面。</div>
@@ -312,6 +316,7 @@
 
       <div class="result__actions">
         <button id="btn-share" class="btn btn--primary">复制分享文案</button>
+        <button id="btn-gallery-result" class="btn btn--gallery">浏览万神殿</button>
         <button id="btn-restart" class="btn btn--ghost">再测一次</button>
       </div>
     `;
@@ -326,8 +331,170 @@
       clearProgress();
       renderIntro();
     });
+    document.getElementById("btn-gallery-result").addEventListener("click", () => {
+      enterGallery("result");
+    });
+
+    // Click-to-open character modal on interactive result elements
+    body.querySelectorAll("[data-char-id]").forEach((el) => {
+      const id = el.getAttribute("data-char-id");
+      el.addEventListener("click", () => openCharacterModal(id));
+      el.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          openCharacterModal(id);
+        }
+      });
+    });
 
     show("result");
+  }
+
+  // ---------- Gallery ----------
+  function enterGallery(fromView) {
+    galleryReturnView = fromView || "intro";
+    renderGallery();
+    show("gallery");
+  }
+
+  function renderGallery() {
+    const grid = document.getElementById("gallery-grid");
+    grid.innerHTML = "";
+    // Preserve canonical order from index.html script load order
+    const order = [
+      "zeus","hera","poseidon","athena","apollo","artemis",
+      "ares","aphrodite","hephaestus","hermes","dionysus","demeter",
+      "hades","prometheus","persephone","hecate",
+      "heracles","odysseus","achilles","orpheus","sisyphus",
+      "cassandra","medea","icarus","antigone"
+    ];
+    order.forEach((id) => {
+      const c = CHARACTERS[id];
+      if (!c) return;
+      const card = document.createElement("button");
+      card.type = "button";
+      card.className = "gallery-card";
+      card.setAttribute("data-char-id", id);
+      card.innerHTML = `
+        <div class="gallery-card__icon">${ICONS[id] || ""}</div>
+        <div class="gallery-card__name-en">${escapeHtml(c.nameEn)}</div>
+        <div class="gallery-card__name-zh">${escapeHtml(c.nameZh)}</div>
+        <div class="gallery-card__archetype">${escapeHtml(c.archetype)}</div>
+      `;
+      card.addEventListener("click", () => openCharacterModal(id));
+      grid.appendChild(card);
+    });
+  }
+
+  // ---------- Character modal ----------
+  function openCharacterModal(id) {
+    const c = CHARACTERS[id];
+    if (!c) return;
+    const body = document.getElementById("char-modal-body");
+    body.innerHTML = renderCharacterDetailHTML(c);
+    const modal = document.getElementById("char-modal");
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    // Reset scroll and focus close for accessibility
+    modal.scrollTop = 0;
+    const closeBtn = modal.querySelector(".modal__close");
+    if (closeBtn) closeBtn.focus();
+    // Nested click-to-open on the modal's own relation blocks
+    body.querySelectorAll("[data-char-id]").forEach((el) => {
+      const nid = el.getAttribute("data-char-id");
+      if (nid === id) return; // same character, no-op
+      el.addEventListener("click", () => openCharacterModal(nid));
+      el.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          openCharacterModal(nid);
+        }
+      });
+    });
+  }
+
+  function closeCharacterModal() {
+    const modal = document.getElementById("char-modal");
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  function renderCharacterDetailHTML(c) {
+    const relBest = (c.bestMatch || []).map((r) => `
+      <div class="relation relation--match is-clickable" data-char-id="${r.id}" role="button" tabindex="0">
+        <div class="relation__type">最佳拍档 · BEST MATCH</div>
+        <div class="relation__name">${CHARACTERS[r.id] ? escapeHtml(CHARACTERS[r.id].nameZh) : r.id} · ${CHARACTERS[r.id] ? escapeHtml(CHARACTERS[r.id].nameEn) : ""}</div>
+        <div class="relation__reason">${escapeHtml(r.reason)}</div>
+      </div>
+    `).join("");
+    const relRival = (c.rival || []).map((r) => `
+      <div class="relation relation--rival is-clickable" data-char-id="${r.id}" role="button" tabindex="0">
+        <div class="relation__type">天生宿敌 · NEMESIS</div>
+        <div class="relation__name">${CHARACTERS[r.id] ? escapeHtml(CHARACTERS[r.id].nameZh) : r.id} · ${CHARACTERS[r.id] ? escapeHtml(CHARACTERS[r.id].nameEn) : ""}</div>
+        <div class="relation__reason">${escapeHtml(r.reason)}</div>
+      </div>
+    `).join("");
+    const relTension = c.tension ? `
+      <div class="relation relation--tension is-clickable" data-char-id="${c.tension.id}" role="button" tabindex="0">
+        <div class="relation__type">暧昧张力 · TENSION</div>
+        <div class="relation__name">${CHARACTERS[c.tension.id] ? escapeHtml(CHARACTERS[c.tension.id].nameZh) : c.tension.id} · ${CHARACTERS[c.tension.id] ? escapeHtml(CHARACTERS[c.tension.id].nameEn) : ""}</div>
+        <div class="relation__reason">${escapeHtml(c.tension.reason)}</div>
+      </div>
+    ` : "";
+
+    return `
+      <div class="char-detail">
+        <header class="char-detail__header">
+          <div class="char-detail__icon" aria-hidden="true">${ICONS[c.id] || ""}</div>
+          <h2 class="char-detail__name-en">${escapeHtml(c.nameEn)}</h2>
+          <h3 class="char-detail__name-zh">${escapeHtml(c.nameZh)}</h3>
+          <p class="char-detail__archetype">${escapeHtml(c.archetype)}</p>
+        </header>
+
+        <section class="section">
+          <div class="section__label">The Myth · 神话</div>
+          <div class="section__body">${paragraphify(c.myth)}</div>
+        </section>
+
+        <section class="section">
+          <div class="section__label">The Portrait · 性格画像</div>
+          <div class="section__body">${paragraphify(c.analysis)}</div>
+        </section>
+
+        <section class="section">
+          <div class="section__label">Light &amp; Shadow · 光与影</div>
+          <div class="duality">
+            <div class="duality__col">
+              <h4>LIGHT · 光明面</h4>
+              <ul>${(c.light || []).map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul>
+            </div>
+            <div class="duality__col duality__col--shadow">
+              <h4>SHADOW · 阴暗面</h4>
+              <ul>${(c.shadow || []).map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__label">Oracle · 神话原典</div>
+          <blockquote class="quote">
+            ${escapeHtml(c.quote)}
+            <span class="quote__attr">— ${escapeHtml(c.quoteSource || (c.nameZh + " · " + c.nameEn))}</span>
+          </blockquote>
+        </section>
+
+        <section class="section">
+          <div class="section__label">Affinities · 关系相性</div>
+          <div class="relations">
+            ${relBest}
+            ${relRival}
+            ${relTension}
+          </div>
+        </section>
+      </div>
+    `;
   }
 
   function segColor(i) {
@@ -449,6 +616,25 @@
     });
     document.getElementById("btn-prev").addEventListener("click", goBack);
     document.getElementById("btn-restart-mid").addEventListener("click", restartMid);
+
+    // Gallery entry / return
+    document.getElementById("btn-gallery-intro").addEventListener("click", () => {
+      enterGallery("intro");
+    });
+    document.getElementById("btn-gallery-back").addEventListener("click", () => {
+      show(galleryReturnView || "intro");
+    });
+
+    // Character modal: close via × button, backdrop click, or Escape
+    document.querySelectorAll("#char-modal [data-modal-close]").forEach((el) => {
+      el.addEventListener("click", closeCharacterModal);
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        const modal = document.getElementById("char-modal");
+        if (modal && modal.classList.contains("is-open")) closeCharacterModal();
+      }
+    });
 
     initStarfield();
     renderIntro();
