@@ -25,7 +25,7 @@
       type: "binary",
       question: "城邦的法律与你胸中的良心冲突，你跪下服从，还是站起赴死？",
       options: [
-        { text: "服从宙斯的法律，秩序高于一切血亲", scores: { zeus: 3, hera: 1, dionysus: -3 } },
+        { text: "服从宙斯的法律，秩序高于一切血亲", scores: { zeus: 3, hera: 1, dionysus: -1 } },
         { text: "违抗王令葬兄，宁死不让良心折腰", scores: { antigone: 3, persephone: 1, pandora: 1 } }
       ]
     },
@@ -52,7 +52,7 @@
       type: "binary",
       question: "命运递来两张门票：推一辈子石头，或用一生苦劳换一夜封神？",
       options: [
-        { text: "推石头到老，在无意义里笑出意义", scores: { sisyphus: 3, antigone: 1, hermes: -3 } },
+        { text: "推石头到老，在无意义里笑出意义", scores: { sisyphus: 3, antigone: 1, hermes: -1 } },
         { text: "十二件苦役打完，熊熊柴堆上升为神", scores: { heracles: 3, prometheus: 1 } }
       ]
     }

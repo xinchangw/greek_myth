@@ -25,7 +25,7 @@
         { text: "一件不少地接下来。我不用言语赎罪——我用我这副脊背的分量来赎。", scores: { heracles: 8, sisyphus: 1 } },
         { text: "拒绝。我会用我自己的方式惩罚自己，按我的尺度，不按神谕的判词。", scores: { antigone: 3, prometheus: 1 } },
         { text: "做是要做，但做得凶狠——让欧律斯透斯每布置一桩就后悔一桩。", scores: { achilles: 3, ares: 1 } },
-        { text: "安静地一件接一件做下去，就像推一块石头——劳作本身，就是答案。", scores: { sisyphus: 3, hades: 1, persephone: 1 } }
+        { text: "做，但每完成一件我都要留下记号——让世人日后亲眼核对，这份羞辱是如何被我扛完的。", scores: { antigone: 3, cassandra: 1, prometheus: 1 } }
       ]
     },
     {
@@ -50,7 +50,7 @@
       options: [
         { text: "一道雷下去。主客之法是我的法，他亵了它，便没有活的余地。", scores: { zeus: 8, ares: 1 } },
         { text: "饶他一命——但烧掉那把王座。腐烂的是王权，不是全体人类。", scores: { prometheus: 3, antigone: 1 } },
-        { text: "连他整座宫殿一并击碎——妻、子、血脉，一粒种子也不许留下。", scores: { hades: 3, hera: 1 } },
+        { text: "收起雷霆——我亲自下凡再访一家，给这一族最后一次被看见的机会。", scores: { prometheus: 3, hermes: 1, demeter: 1 } },
         { text: "留他活着，带着那段记忆——把他变成他心里已然是的那种东西。", scores: { medea: 3, cassandra: 1, hecate: 1 } }
       ]
     }

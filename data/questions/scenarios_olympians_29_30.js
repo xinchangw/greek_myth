@@ -14,7 +14,7 @@
           scores: { demeter: 8, persephone: 1 }
         },
         {
-          text: "点起我的火炬陪她母亲走下去——有些黑路不能让人独自走。",
+          text: "我不再独自找——我向每一个十字路口的女神跪下求助，哪条暗路都愿走。",
           scores: { hecate: 3, persephone: 1, orpheus: 1 }
         },
         {

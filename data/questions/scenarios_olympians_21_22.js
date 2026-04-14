@@ -12,7 +12,7 @@
         { text: "抽到什么就是什么——我接下这一签，天穹便由我执掌。", scores: { zeus: 8, hera: 1 } },
         { text: "我想要深海，那里安静，没有人看得见我做什么。", scores: { poseidon: 3, artemis: 1 } },
         { text: "让我去冥府吧，没人愿去的地方，总得有人统治。", scores: { hades: 3, hecate: 1, persephone: 1 } },
-        { text: "凭什么要分？一个世界只该有一个王，那就是我。", scores: { ares: 3, zeus: 1 } }
+        { text: "签已落，我接下——但我会让我那一片比另两片更被敬畏。", scores: { ares: 3, zeus: 1 } }
       ]
     },
     {

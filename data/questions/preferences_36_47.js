@@ -52,7 +52,7 @@
       question: "哪种乐声最能打动你？",
       options: [
         { text: "庄严的七弦琴", scores: { apollo: 3, athena: 1 } },
-        { text: "广场上喧嚷的笛与鼓", scores: { dionysus: 3, ares: 1, artemis: -3 } },
+        { text: "广场上喧嚷的笛与鼓", scores: { dionysus: 3, ares: 1, artemis: -1 } },
         { text: "催人泪下的竖琴", scores: { orpheus: 3, cassandra: 1 } },
         { text: "旷野中的牧笛", scores: { hermes: 3, artemis: 1 } }
       ]
@@ -84,7 +84,7 @@
       type: "preference",
       question: "若必须选一种结局，你选？",
       options: [
-        { text: "战死在沙场上", scores: { achilles: 3, ares: 1, poseidon: 1, demeter: -3 } },
+        { text: "战死在沙场上", scores: { achilles: 3, ares: 1, poseidon: 1, demeter: -1 } },
         { text: "为爱人赴死", scores: { orpheus: 3, icarus: 1, medea: 1 } },
         { text: "死后仍无尽劳作", scores: { sisyphus: 3, heracles: 2 } },
         { text: "在花园中被悄然带走", scores: { persephone: 3, demeter: 1, pandora: 1 } }
@@ -95,8 +95,8 @@
       type: "preference",
       question: "你心中最理想的爱情是？",
       options: [
-        { text: "热烈占有，不容他人染指", scores: { zeus: 3, hera: 1, medea: 1, hermes: -3 } },
-        { text: "沉迷于美与欲望的漩涡", scores: { aphrodite: 3, dionysus: 1, athena: -3 } },
+        { text: "热烈占有，不容他人染指", scores: { zeus: 3, hera: 1, medea: 1, hermes: -1 } },
+        { text: "沉迷于美与欲望的漩涡", scores: { aphrodite: 3, dionysus: 1, athena: -1 } },
         { text: "彼此忠贞，白头到老的盟约", scores: { hera: 3, persephone: 1 } },
         { text: "形同山林的独处与自由", scores: { artemis: 3, hecate: 1, circe: 1 } }
       ]
