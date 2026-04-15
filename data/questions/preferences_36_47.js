@@ -86,8 +86,8 @@
       options: [
         { text: "战死在沙场上", scores: { achilles: 3, ares: 1, poseidon: 1, demeter: -1 } },
         { text: "为爱人赴死", scores: { orpheus: 3, icarus: 1 } },
-        { text: "死后仍无尽劳作", scores: { sisyphus: 3, heracles: 2 } },
-        { text: "在花园中被悄然带走", scores: { persephone: 1, pandora: 1 } }
+        { text: "死后被罚永世推石上山，徒劳无尽头", scores: { sisyphus: 3, heracles: 2 } },
+        { text: "在花丛中被冥府掳走，从此作亡者之后", scores: { persephone: 3, pandora: 1 } }
       ]
     },
     {
