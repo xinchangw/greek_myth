@@ -47,8 +47,8 @@
           scores: { medea: 3, circe: 1, hecate: 1 }
         },
         {
-          text: "拼尽全力冲向她，撞上规矩的天花板也不回头——被烧死也值。",
-          scores: { icarus: 3, achilles: 1, narcissus: 1 }
+          text: "用歌声、诗句和日复一日的诚意让她自己看见我——她若仍不愿意，我就守着这份心退到远处，也不越她说出口的那条线。",
+          scores: { orpheus: 3, apollo: 1, hermes: 1 }
         }
       ]
     }
