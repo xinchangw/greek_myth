@@ -86,7 +86,7 @@
       options: [
         { text: "战死在沙场上", scores: { achilles: 3, ares: 1, poseidon: 1, demeter: -1 } },
         { text: "为爱人赴死", scores: { orpheus: 3, icarus: 1 } },
-        { text: "两度骗过死神，宁被罚永世推石，也不肯向命认输", scores: { sisyphus: 3, heracles: 2 } },
+        { text: "尝试欺骗死神，但被发现将永世受罚", scores: { sisyphus: 3, heracles: 2 } },
         { text: "在花丛中被冥府掳走，从此作亡者之后", scores: { persephone: 3, pandora: 1 } }
       ]
     },
