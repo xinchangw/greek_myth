@@ -82,7 +82,7 @@
     {
       id: 43,
       type: "preference",
-      question: "若必须选一种结局，你选？",
+      question: "若众神要为你安排一种归宿，你选？",
       options: [
         { text: "战死在沙场上", scores: { achilles: 3, ares: 1, poseidon: 1, demeter: -1 } },
         { text: "为爱人赴死", scores: { orpheus: 3, icarus: 1 } },
